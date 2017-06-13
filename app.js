@@ -61,7 +61,7 @@ hbs.registerHelper("debug", function(optionalValue) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/catalyst', express.static(path.join(__dirname, 'public')));
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Middleware the will -ALWAYS- be executed
@@ -82,21 +82,21 @@ app.use(function(req, res, next) {
 // Assign URI to Routes
 // Use routes now that app has been initiated and all middleware is defined
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-app.use('/', routes);
-app.use('/test', test);
-app.use('/view', view);
-app.use('/edit', edit);
-app.use('/application', appform);
-app.use('/vettingworksheet', vettingworksheet);
+app.use('/catalyst', routes);
+app.use('/catalyst/test', test);
+app.use('/catalyst/view', view);
+app.use('/catalyst/edit', edit);
+app.use('/catalyst/application', appform);
+app.use('/catalyst/vettingworksheet', vettingworksheet);
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Server Side Libraries
 // Links to jQuery and Boots strap files
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
+app.use('/catalyst/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
-app.use('/javascript', express.static(__dirname + '/public/javascripts'));
+app.use('/catalyst/javascript', express.static(__dirname + '/public/javascripts'));
 app.use('/fonts/', express.static(__dirname + '/node_modules/bootstrap/dist/fonts'));
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

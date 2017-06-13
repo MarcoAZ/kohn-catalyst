@@ -60,7 +60,7 @@ function toggleHL() {
     //POST the data to the database
     var posting = $.ajax({
         type : 'POST',
-        url: "/edit/highlight/" + $("#hl_Id").val(),        //need to append the HighlightPackage ID to the URL
+        url: "/catalyst/edit/highlight/" + $("#hl_Id").val(),        //need to append the HighlightPackage ID to the URL
         dataType: 'json',
         contentType: 'application/json; charset=UTF-8',
         data: JSON.stringify(payload)

@@ -14,7 +14,7 @@ function init() {
 		//POST the data to the database
 		var posting = $.ajax({
 			type : 'POST',
-			url: "/application/add",
+			url: "/catalyst/application/add",
 			dataType: 'json',
 			contentType: 'application/json; charset=UTF-8',
 			data: jsonToSend
@@ -23,7 +23,7 @@ function init() {
 		//upon return, check for 200, then redirect so success page
 		posting.done(function (xhr) {
 			if(xhr.status == 200) {
-				window.location.replace("/application/success");
+				window.location.replace("/catalyst/application/success");
 			}
 			else{
 				console.log("Whoops, something went wrong");

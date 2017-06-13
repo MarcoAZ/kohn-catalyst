@@ -1,5 +1,5 @@
-<a href="/view" class="btn btn-primary">Back to Vetting Home</a>
-<a href="/vettingworksheet/{{doc._id}}" class="btn btn-primary">Vetting Worksheet</a>
+<a href="/catalyst/view" class="btn btn-primary">Back to Vetting Home</a>
+<a href="/catalyst/vettingworksheet/{{doc._id}}" class="btn btn-primary">Vetting Worksheet</a>
 
 
 <div class="container">
@@ -7,7 +7,7 @@
         <div class="col-xs-12">
             <h1>{{doc.application.name.first}} {{doc.application.name.last}} - Application View</h1>
 
-            <h3>Status: <a href="#" id="status" data-type="select" data-pk="1" data-url="/edit/{{doc._id}}" data-name="status" data-title="Select status"></a></h3>
+            <h3>Status: <a href="#" id="status" data-type="select" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="status" data-title="Select status"></a></h3>
 
             <!--VETTING NOTES-->
             <h3>Vetting Notes</h3>
@@ -79,94 +79,94 @@
                     <td>
                         <!--X editable fields have this anchor tag and attributes
                             for more details: https://vitalets.github.io/x-editable/docs.html#gettingstarted-->
-                        <a id="name" href="#" data-type="name" data-pk="1" data-url="/edit/name/{{doc._id}}" data-title="Enter Name"></a>
+                        <a id="name" href="#" data-type="name" data-pk="1" data-url="/catalyst/edit/name/{{doc._id}}" data-title="Enter Name"></a>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>Preferred Name</td>
-                    <td><a href="#" id="pref_name" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.name.preferred" data-title="Enter Preferred Name">{{doc.application.name.preferred}}</a></td>
+                    <td><a href="#" id="pref_name" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.name.preferred" data-title="Enter Preferred Name">{{doc.application.name.preferred}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="application.phone" class="highlight">{{highlight.application.phone}}</a></td>
                     <td>Preferred Phone</td>
-                    <td><a href="#" id="phone_number" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.phone.preferred" data-title="Enter Preferred Phone Number">{{doc.application.phone.preferred}}</a></td>
+                    <td><a href="#" id="phone_number" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.phone.preferred" data-title="Enter Preferred Phone Number">{{doc.application.phone.preferred}}</a></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>Other Phone</td>
-                    <td><a href="#" id="cell_phone" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.phone.other" data-title="Enter Other Phone Number">{{doc.application.phone.other}}</a></td>
+                    <td><a href="#" id="cell_phone" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.phone.other" data-title="Enter Other Phone Number">{{doc.application.phone.other}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="application.address" class="highlight">{{highlight.application.address}}</a></td>
                     <td>Address</td>
                     <td>
-                        <a id="address" href="#" data-type="address" data-pk="1" data-url="/edit/address/{{doc._id}}" data-title="Enter Address"></a>
+                        <a id="address" href="#" data-type="address" data-pk="1" data-url="/catalyst/edit/address/{{doc._id}}" data-title="Enter Address"></a>
                     </td>
                 </tr>
                 <tr>
                     <td><a id="application.dob" class="highlight">{{highlight.application.dob}}</a></td>
                     <td>Date Of Birth</td>
-                    <td><a href="#" id="dob" data-type="date" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.dob.date" data-title="Select date">{{doc.application.dob.date}}</a></td>
+                    <td><a href="#" id="dob" data-type="date" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.dob.date" data-title="Select date">{{doc.application.dob.date}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="application.marital" class="highlight">{{highlight.application.marital}}</a></td>
                     <td>Marital Status</td>
                     <td>
-                        <a href="#" id="marital_status" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.marital.status" data-title="Enter Marital Status">{{doc.application.marital.status}}</a>
+                        <a href="#" id="marital_status" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.marital.status" data-title="Enter Marital Status">{{doc.application.marital.status}}</a>
                     </td>
                 </tr>
                 <tr>
                     <td><a id="application.spouse" class="highlight">{{highlight.application.spouse}}</a></td>
                     <td>Spouse</td>
                     <td>
-                        <a href="#" id="spouse" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.marital.spouse" data-title="Enter Spouse Name">{{doc.application.marital.spouse}}</a>
+                        <a href="#" id="spouse" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.marital.spouse" data-title="Enter Spouse Name">{{doc.application.marital.spouse}}</a>
                     </td>
                 </tr>
                 <tr>
                     <td><a id="application.email" class="highlight">{{highlight.application.email}}</a></td>
                     <td>Email</td>
-                    <td><a href="#" id="email" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.email" data-title="Enter Email">{{doc.application.email}}</a></td>
+                    <td><a href="#" id="email" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.email" data-title="Enter Email">{{doc.application.email}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="application.driver_license" class="highlight">{{highlight.application.driver_license}}</a></td>
                     <td>Driver's License</td>
-                    <td><a href="#" id="driver_license" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.driver_license.number" data-title="Enter Driver's License Number">{{doc.application.driver_license.number}}</a></td>
+                    <td><a href="#" id="driver_license" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.driver_license.number" data-title="Enter Driver's License Number">{{doc.application.driver_license.number}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="application.emergency_contact" class="highlight">{{highlight.application.emergency_contact}}</a></td>
                     <td>Emergency Contact</td>
-                    <td>Name: <a href="#" id="emergency_name" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.emergency_contact.name" data-title="Enter Emergency Contact Name">{{doc.application.emergency_contact.name}}</a>
+                    <td>Name: <a href="#" id="emergency_name" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.emergency_contact.name" data-title="Enter Emergency Contact Name">{{doc.application.emergency_contact.name}}</a>
                         <br>
-                        Relationship: <a href="#" id="emergency_relation" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.emergency_contact.relationship" data-title="Enter Emergency Contact Relationship">{{doc.application.emergency_contact.relationship}}</a>
+                        Relationship: <a href="#" id="emergency_relation" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.emergency_contact.relationship" data-title="Enter Emergency Contact Relationship">{{doc.application.emergency_contact.relationship}}</a>
                         <br>
-                        Phone: <a href="#" id="emergency_phone" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.emergency_contact.phone" data-title="Enter Emergency Contact Phone Number">{{doc.application.emergency_contact.phone}}</a>
+                        Phone: <a href="#" id="emergency_phone" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.emergency_contact.phone" data-title="Enter Emergency Contact Phone Number">{{doc.application.emergency_contact.phone}}</a>
                     </td>
                 </tr>
                 <tr>
                     <td><a id="application.language" class="highlight">{{highlight.application.language}}</a></td>
                     <td>Language</td>
-                    <td><a href="#" id="language" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.language" data-title="Enter Language">{{doc.application.language}}</a></td>
+                    <td><a href="#" id="language" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.language" data-title="Enter Language">{{doc.application.language}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="application.veteran" class="highlight">{{highlight.application.veteran}}</a></td>
                     <td>Veteran</td>
                     <td>
-                        <a href="#" id="veteran" data-type="select" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.veteran" data-title="Select Veteran Status"></a>
+                        <a href="#" id="veteran" data-type="select" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.veteran" data-title="Select Veteran Status"></a>
                     </td>
                 </tr>
                 <tr>
                     <td><a id="application.owns_home" class="highlight">{{highlight.application.owns_home}}</a></td>
                     <td>Owns Home</td>
                     <td>
-                        <a href="#" id="owns_home" data-type="select" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.owns_home" data-title="Select Home Ownership Status"></a>
+                        <a href="#" id="owns_home" data-type="select" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.owns_home" data-title="Select Home Ownership Status"></a>
                     </td>
                 </tr>
                 <tr>
                     <td><a id="application.special_circumstances" class="highlight">{{highlight.application.special_circumstances}}</a></td>
                     <td>Special Circumstances</td>
                     <td>
-                        <a href="#" id="special_circumstances" data-type="textarea" data-pk="1" data-url="/edit/{{doc._id}}" data-name="application.special_circumstances.note" data-title="Enter Special Circumstances">{{doc.application.special_circumstances.note}}</a>
+                        <a href="#" id="special_circumstances" data-type="textarea" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="application.special_circumstances.note" data-title="Enter Special Circumstances">{{doc.application.special_circumstances.note}}</a>
                     </td>
                 </tr>
                 </tbody>
@@ -184,22 +184,22 @@
                 <tr>
                     <td><a id="property.home_type" class="highlight">{{highlight.property.home_type}}</a></td>
                     <td>Home Type</td>
-                    <td><a href="#" id="home_type" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="property.home_type" data-title="Enter Home Type">{{doc.property.home_type}}</a></td>
+                    <td><a href="#" id="home_type" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="property.home_type" data-title="Enter Home Type">{{doc.property.home_type}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="property.ownership_length" class="highlight">{{highlight.property.ownership_length}}</a></td>
                     <td>Length of Ownership</td>
-                    <td><a href="#" id="ownership_length" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="property.ownership_length" data-title="Enter Ownership Length">{{doc.property.ownership_length}}</a></td>
+                    <td><a href="#" id="ownership_length" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="property.ownership_length" data-title="Enter Ownership Length">{{doc.property.ownership_length}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="property.year_constructed" class="highlight">{{highlight.property.year_constructed}}</a></td>
                     <td>Year Constructed</td>
-                    <td><a href="#" id="year_constructed" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="property.year_constructed" data-title="Enter Year Constructed">{{doc.property.year_constructed}}</a></td>
+                    <td><a href="#" id="year_constructed" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="property.year_constructed" data-title="Enter Year Constructed">{{doc.property.year_constructed}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="property.requested_repairs" class="highlight">{{highlight.property.requested_repairs}}</a></td>
                     <td>Requested Repairs</td>
-                    <td><a href="#" id="requested_repairs" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="property.requested_repairs" data-title="Enter Requested Repairs">{{doc.property.requested_repairs}}</a></td>
+                    <td><a href="#" id="requested_repairs" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="property.requested_repairs" data-title="Enter Requested Repairs">{{doc.property.requested_repairs}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="application.other_residents" class="highlight">{{highlight.application.other_residents}}</a></td>
@@ -221,9 +221,9 @@
                             <tbody>
                             {{#each doc.application.other_residents.name}}
                                 <tr>
-                                    <td><a href="#" class="residents_name" id="residents_name_{{@index}}" data-type="text" data-pk="{{this}}" data-url="/edit/array/{{../doc._id}}" data-name="application.other_residents.name">{{this}}</a></td>
-                                    <td><a href="#" class="residents_age" id="residents_age_{{@index}}" data-type="text" data-pk="{{lookup ../doc.application.other_residents.age @index}}" data-url="/edit/array/{{../doc._id}}" data-name="application.other_residents.age">{{lookup ../doc.application.other_residents.age @index}}</a></td>
-                                    <td><a href="#" class="residents_relationship" id="residents_relationship_{{@index}}" data-type="text" data-pk="{{lookup ../doc.application.other_residents.relationship @index}}" data-url="/edit/array/{{../doc._id}}" data-name="application.other_residents.relationship">{{lookup ../doc.application.other_residents.relationship @index}}</a></td>
+                                    <td><a href="#" class="residents_name" id="residents_name_{{@index}}" data-type="text" data-pk="{{this}}" data-url="/catalyst/edit/array/{{../doc._id}}" data-name="application.other_residents.name">{{this}}</a></td>
+                                    <td><a href="#" class="residents_age" id="residents_age_{{@index}}" data-type="text" data-pk="{{lookup ../doc.application.other_residents.age @index}}" data-url="/catalyst/edit/array/{{../doc._id}}" data-name="application.other_residents.age">{{lookup ../doc.application.other_residents.age @index}}</a></td>
+                                    <td><a href="#" class="residents_relationship" id="residents_relationship_{{@index}}" data-type="text" data-pk="{{lookup ../doc.application.other_residents.relationship @index}}" data-url="/catalyst/edit/array/{{../doc._id}}" data-name="application.other_residents.relationship">{{lookup ../doc.application.other_residents.relationship @index}}</a></td>
                                 </tr>
                             {{/each}}
                             </tbody>
@@ -245,41 +245,41 @@
                 <tr>
                     <td><a id="finance.mortgage" class="highlight">{{highlight.finance.mortgage}}</a></td>
                     <td>Mortgage Payment</td>
-                    <td><a href="#" id="mortgage_payment" data-type="number" data-pk="1" data-url="/edit/{{doc._id}}" data-name="finance.mortgage.payment" data-title="Enter Mortgage Payment">{{doc.finance.mortgage.payment}}</a></td>
+                    <td><a href="#" id="mortgage_payment" data-type="number" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="finance.mortgage.payment" data-title="Enter Mortgage Payment">{{doc.finance.mortgage.payment}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="finance.mort_up_to_date" class="highlight">{{highlight.finance.mort_up_to_date}}</a></td>
                     <td>Mortgage Up-to-Date</td>
-                    <td><a href="#" id="mortgage" data-type="select" data-pk="1" data-url="/edit/{{doc._id}}" data-name="finance.mortgage.up_to_date" data-title="Is Mortgage Up-to-Date?"></a></td>
+                    <td><a href="#" id="mortgage" data-type="select" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="finance.mortgage.up_to_date" data-title="Is Mortgage Up-to-Date?"></a></td>
                 </tr>
                 <tr>
                     <td><a id="finance.income" class="highlight">{{highlight.finance.income}}</a></td>
                     <td>Income Amount</td>
-                    <td><a href="#" id="income" data-type="number" data-pk="1" data-url="/edit/{{doc._id}}" data-name="finance.income.amount" data-title="Enter Income">{{doc.finance.income.amount}}</a></td>
+                    <td><a href="#" id="income" data-type="number" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="finance.income.amount" data-title="Enter Income">{{doc.finance.income.amount}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="finance.client_can_contribute" class="highlight">{{highlight.finance.client_can_contribute}}</a></td>
                     <td>Client Can Contribute Financially</td>
                     <td>
-                        <a href="#" id="f_client_can_contrib" data-type="select" data-pk="1" data-url="/edit/{{doc._id}}" data-name="finance.client_can_contribute.value" data-title="Can Client Contribute Financially?"></a>
+                        <a href="#" id="f_client_can_contrib" data-type="select" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="finance.client_can_contribute.value" data-title="Can Client Contribute Financially?"></a>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>Client Financial Contribution</td>
-                    <td><a href="#" id="f_client_contrib" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="finance.client_can_contribute.description" data-title="Enter Contribution Description">{{doc.finance.client_can_contribute.description}}</a></td>
+                    <td><a href="#" id="f_client_contrib" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="finance.client_can_contribute.description" data-title="Enter Contribution Description">{{doc.finance.client_can_contribute.description}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="finance.associates_can_contribute" class="highlight">{{highlight.finance.associates_can_contribute}}</a></td>
                     <td>Associates Can Contribute Financially</td>
                     <td>
-                        <a href="#" id="f_associate_can_contrib" data-type="select" data-pk="1" data-url="/edit/{{doc._id}}" data-name="finance.associates_can_contribute.value" data-title="Can Associates Contribute Financially?"></a>
+                        <a href="#" id="f_associate_can_contrib" data-type="select" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="finance.associates_can_contribute.value" data-title="Can Associates Contribute Financially?"></a>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>Associate Financial Contribution</td>
-                    <td><a href="#" id="f_associate_contrib" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="finance.associates_can_contribute.description" data-title="Enter Contribution Description">{{doc.finance.associates_can_contribute.description}}</a></td>
+                    <td><a href="#" id="f_associate_contrib" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="finance.associates_can_contribute.description" data-title="Enter Contribution Description">{{doc.finance.associates_can_contribute.description}}</a></td>
                 </tr>
 
                 <tr>
@@ -299,8 +299,8 @@
                             </thead>
                             {{#each doc.finance.assets.name}}
                                 <tr>
-                                    <td><a href="#" class="asset_name" id="f_asset_name_{{@index}}" data-type="text" data-pk="{{this}}" data-url="/edit/array/{{../doc._id}}" data-name="finance.assets.name">{{this}}</a></td>
-                                    <td><a href="#" class="asset_value" id="f_asset_value_{{@index}}" data-type="text" data-pk="{{lookup ../doc.finance.assets.value @index}}" data-url="/edit/array/{{../doc._id}}" data-name="finance.assets.value">{{lookup ../doc.finance.assets.value @index}}</a></td>
+                                    <td><a href="#" class="asset_name" id="f_asset_name_{{@index}}" data-type="text" data-pk="{{this}}" data-url="/catalyst/edit/array/{{../doc._id}}" data-name="finance.assets.name">{{this}}</a></td>
+                                    <td><a href="#" class="asset_value" id="f_asset_value_{{@index}}" data-type="text" data-pk="{{lookup ../doc.finance.assets.value @index}}" data-url="/catalyst/edit/array/{{../doc._id}}" data-name="finance.assets.value">{{lookup ../doc.finance.assets.value @index}}</a></td>
                                 </tr>
                             {{/each}}
                         </table>
@@ -322,42 +322,42 @@
                     <td><a id="property.client_can_contribute" class="highlight">{{highlight.property.client_can_contribute}}</a></td>
                     <td>Client Can Contribute Labor</td>
                     <td>
-                        <a href="#" id="l_client_can_contrib" data-type="select" data-pk="1" data-url="/edit/{{doc._id}}" data-name="property.client_can_contribute.value" data-title="Can Client Contribute Labor?"></a>
+                        <a href="#" id="l_client_can_contrib" data-type="select" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="property.client_can_contribute.value" data-title="Can Client Contribute Labor?"></a>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>Client Labor Contribution</td>
-                    <td><a href="#" id="l_client_contrib" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="property.client_can_contribute.description" data-title="Enter Contribution Description">{{doc.property.client_can_contribute.description}}</a></td>
+                    <td><a href="#" id="l_client_contrib" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="property.client_can_contribute.description" data-title="Enter Contribution Description">{{doc.property.client_can_contribute.description}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="property.associates_can_contribute" class="highlight">{{highlight.property.associates_can_contribute}}</a></td>
                     <td>Associates Can Contribute Labor</td>
                     <td>
-                        <a href="#" id="l_associate_can_contrib" data-type="select" data-pk="1" data-url="/edit/{{doc._id}}" data-name="property.associates_can_contribute.value" data-title="Can Associates Contribute Labor?"></a>
+                        <a href="#" id="l_associate_can_contrib" data-type="select" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="property.associates_can_contribute.value" data-title="Can Associates Contribute Labor?"></a>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>Associate Labor Contribution</td>
-                    <td><a href="#" id="l_associate_contrib" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="property.associates_can_contribute.description" data-title="Enter Contribution Description">{{doc.property.associates_can_contribute.description}}</a></td>
+                    <td><a href="#" id="l_associate_contrib" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="property.associates_can_contribute.description" data-title="Enter Contribution Description">{{doc.property.associates_can_contribute.description}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="recruitment.fbo_help"class="highlight">{{highlight.recruitment.fbo_help}}</a></td>
                     <td>Involved with a Faith-Based Organization</td>
                     <td>
-                        <a href="#" id="fbo_help" data-type="select" data-pk="1" data-url="/edit/{{doc._id}}" data-name="recruitment.fbo_help" data-title="Does client belong to an FBO?"></a>
+                        <a href="#" id="fbo_help" data-type="select" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="recruitment.fbo_help" data-title="Does client belong to an FBO?"></a>
                     </td>
                 </tr>
                 <tr>
                     <td><a id="recruitment.fbo_name"class="highlight">{{highlight.recruitment.fbo_name}}</a></td>
                     <td>Faith-Based Organization Name</td>
-                    <td><a href="#" id="fbo_name" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="recruitment.fbo_name" data-title="Enter Name of FBO">{{doc.recruitment.fbo_name}}</a></td>
+                    <td><a href="#" id="fbo_name" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="recruitment.fbo_name" data-title="Enter Name of FBO">{{doc.recruitment.fbo_name}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="finance.requested_other_help"class="highlight">{{highlight.finance.requested_other_help}}</a></td>
                     <td>Requested Other Help</td>
-                    <td><a href="#" id="request_help" data-type="select" data-pk="1" data-url="/edit/{{doc._id}}" data-name="finance.requested_other_help.value" data-title="Client Requested Other Help?"></a></td>
+                    <td><a href="#" id="request_help" data-type="select" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="finance.requested_other_help.value" data-title="Client Requested Other Help?"></a></td>
                 </tr>
                 </tbody>
             </table>
@@ -375,34 +375,34 @@
                     <td><a id="advocate.is_advocate" class="highlight">{{highlight.advocate.is_advocate}}</a></td>
                     <td>Does the Client have an Advocate?</td>
                     <td>
-                        Is Advocate: <a href="#" id="is_advocate" data-type="select" data-pk="1" data-url="/edit/{{doc._id}}" data-name="advocate.is_advocate" data-title="Is Client an Advocate?"></a></br>
-                        Is Individual: <a href="#" id="individual" data-type="select" data-pk="1" data-url="/edit/{{doc._id}}" data-name="advocate.individual" data-title="Is Client an Individual?"></a></br>
-                        Is Non-profit Org: <a href="#" id="npo" data-type="select" data-pk="1" data-url="/edit/{{doc._id}}" data-name="advocate.npo" data-title="Is Client from a Non-Profit?"></a></br>
-                        Is Government Agency: <a href="#" id="gov" data-type="select" data-pk="1" data-url="/edit/{{doc._id}}" data-name="advocate.gov" data-title="Is Client from a Government Agency?"></a>
+                        Is Advocate: <a href="#" id="is_advocate" data-type="select" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="advocate.is_advocate" data-title="Is Client an Advocate?"></a></br>
+                        Is Individual: <a href="#" id="individual" data-type="select" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="advocate.individual" data-title="Is Client an Individual?"></a></br>
+                        Is Non-profit Org: <a href="#" id="npo" data-type="select" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="advocate.npo" data-title="Is Client from a Non-Profit?"></a></br>
+                        Is Government Agency: <a href="#" id="gov" data-type="select" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="advocate.gov" data-title="Is Client from a Government Agency?"></a>
                     </td>
                 </tr>
                 <tr>
                     <td><a id="advocate.name" class="highlight">{{highlight.advocate.name}}</a></td>
                     <td>Advocate Name</td>
-                    <td><a href="#" id="advocate_name" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="advocate.name" data-title="Enter Advocate Name">{{doc.advocate.name}}</a></td>
+                    <td><a href="#" id="advocate_name" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="advocate.name" data-title="Enter Advocate Name">{{doc.advocate.name}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="advocate.organization_name" class="highlight">{{highlight.advocate.organization_name}}</a></td>
                     <td>Advocate Organization Name</td>
                     <td>
-                        <a href="#" id="advocate_org_name" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="advocate.organization_name" data-title="Enter Advocate Organization">{{doc.advocate.organization_name}}</a>
+                        <a href="#" id="advocate_org_name" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="advocate.organization_name" data-title="Enter Advocate Organization">{{doc.advocate.organization_name}}</a>
                     </td>
                 </tr>
                 <tr>
                     <td><a id="advocate.relationship" class="highlight">{{highlight.advocate.relationship}}</a></td>
                     <td>Advocate Relationship</td>
-                    <td><a href="#" id="advocate_relationship" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="advocate.relationship" data-title="Enter Advocate Relationship">{{doc.advocate.relationship}}</a></td>
+                    <td><a href="#" id="advocate_relationship" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="advocate.relationship" data-title="Enter Advocate Relationship">{{doc.advocate.relationship}}</a></td>
                 </tr>
                 <tr>
                     <td><a id="advocate.phone" class="highlight">{{highlight.advocate.phone}}</a></td>
                     <td>Advocate Phone Number</td>
                     <td>
-                        <a href="#" id="advocate_phone" data-type="text" data-pk="1" data-url="/edit/{{doc._id}}" data-name="advocate.phone" data-title="Enter Advocate Phone Number">{{doc.advocate.phone}}</a>
+                        <a href="#" id="advocate_phone" data-type="text" data-pk="1" data-url="/catalyst/edit/{{doc._id}}" data-name="advocate.phone" data-title="Enter Advocate Phone Number">{{doc.advocate.phone}}</a>
                     </td>
                 </tr>
                 </tbody>

@@ -10,7 +10,7 @@ var options = {
     user:   config.mongo.username,      // Username and password of a user that has read and write permissions
     pass:   config.mongo.password
 };
-var uri = 'mongodb://' + remote_url + '/' + config.mongo.db;
+var uri = 'mongodb://' + remote_url + '/' + config.mongo.db + '?authSource=admin';
 
 // Connect to the URL
 mongoose.connect(uri, options);

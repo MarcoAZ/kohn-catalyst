@@ -35,7 +35,7 @@ function addNote(e) {
         //POST the data to the database
         var posting = $.ajax({
             type : 'POST',
-            url: "/view/addNote",
+            url: "/catalyst/view/addNote",
             dataType: 'json',
             contentType: 'application/json; charset=UTF-8',
             data: JSON.stringify(payload)
@@ -96,7 +96,7 @@ function deleteNote(e) {
 
     var posting = $.ajax({
         type : 'POST',
-        url: "/view/delNote",
+        url: "/catalyst/view/delNote",
         dataType: 'json',
         contentType: 'application/json; charset=UTF-8',
         data: JSON.stringify(payload)
@@ -155,7 +155,7 @@ function updateNote(e) {
     //POST the data to the database
     var posting = $.ajax({
         type : 'POST',
-        url: "/view/updateNote",
+        url: "/catalyst/view/updateNote",
         dataType: 'json',
         contentType: 'application/json; charset=UTF-8',
         data: JSON.stringify(payload)
@@ -164,7 +164,7 @@ function updateNote(e) {
         if(xhr.status == 200) {
             //revert form into just text after success
             note[0].innerHTML = notedDescrip;
-            //revert buttonsby changing button value and class
+            //revert buttons by changing button value and class
             updateButton.val("Update Note");
             updateButton.attr("class", "update-button btn btn-info");
             cancelButton.val("Delete Note");
